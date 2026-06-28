@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Fitness | Premium Gym</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor (Desktop only) -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Premium Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <h1 class="loader-text">HYBRID FITNESS</h1>
+            <div class="loader-progress-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="Hybrid Fitness Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none;" class="logo-text">HYBRID</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#equipment" class="nav-link">Equipment</a>
+                <a href="#memberships" class="nav-link">Memberships</a>
+                <a href="#trainers" class="nav-link">Trainers</a>
+            </div>
+            <a href="#contact" class="btn btn-primary magnetic-btn">Join Now</a>
+            
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#equipment" class="mobile-link">Equipment</a>
+            <a href="#memberships" class="mobile-link">Memberships</a>
+            <a href="#trainers" class="mobile-link">Trainers</a>
+            <a href="#contact" class="mobile-link">Join Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="assets/images/hero-bg.jpg" alt="Gym Background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-particles" id="particles"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title reveal-text">
+                    <span>HYBRID</span> <span class="text-accent">FITNESS</span> GYM
+                </h1>
+                <p class="hero-subtitle reveal-text">
+                    Train Hard. Stay Strong. Become Unstoppable.
+                </p>
+                <div class="hero-cta reveal-element">
+                    <a href="#memberships" class="btn btn-primary magnetic-btn">Join Now</a>
+                    <a href="#contact" class="btn btn-outline magnetic-btn">Book Trial</a>
+                </div>
+            </div>
+            
+            <div class="hero-athlete">
+                <img src="assets/images/hero-athlete.png" alt="Athlete">
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow"></span>
+            </div>
+        </section>
+
+        <!-- Animated Statistics -->
+        <section class="stats" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-up">
+                        <h3 class="stat-number"><span class="counter" data-target="57">0</span>+</h3>
+                        <p class="stat-label">Google Reviews</p>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.1s;">
+                        <h3 class="stat-number"><span class="counter-float" data-target="4.9">0.0</span><i class="fas fa-star text-accent" style="font-size: 0.6em; margin-left:5px;"></i></h3>
+                        <p class="stat-label">Google Rating</p>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.2s;">
+                        <h3 class="stat-number"><span class="counter" data-target="500">0</span>+</h3>
+                        <p class="stat-label">Members</p>
+                    </div>
+                    <div class="stat-item reveal-up" style="transition-delay: 0.3s;">
+                        <h3 class="stat-number"><span class="counter" data-target="2">0</span>+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Hybrid -->
+        <section class="features" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">WHY CHOOSE <span class="text-accent">HYBRID</span></h2>
+                    <p class="section-subtitle reveal-text">Experience fitness at a whole new level with our world-class amenities.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Cards -->
+                    <div class="feature-card glass-card reveal-up">
+                        <div class="feature-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h3 class="feature-title">Latest Equipment</h3>
+                        <p class="feature-desc">State-of-the-art machinery and free weights for all your strength needs.</p>
+                    </div>
+                    <div class="feature-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <h3 class="feature-title">Professional Trainers</h3>
+                        <p class="feature-desc">Certified experts dedicated to helping you achieve your fitness goals.</p>
+                    </div>
+                    <div class="feature-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="feature-icon"><i class="fas fa-hand-rock"></i></div>
+                        <h3 class="feature-title">Boxing & MMA</h3>
+                        <p class="feature-desc">Dedicated zones and professional rings for combat sports training.</p>
+                    </div>
+                    <div class="feature-card glass-card reveal-up">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="feature-title">Separate Strength Zone</h3>
+                        <p class="feature-desc">Dedicated heavy lifting area designed for serious powerlifters.</p>
+                    </div>
+                    <div class="feature-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="feature-icon"><i class="fas fa-wind"></i></div>
+                        <h3 class="feature-title">Heating & AC</h3>
+                        <p class="feature-desc">Optimal climate control for a comfortable workout environment year-round.</p>
+                    </div>
+                    <div class="feature-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="feature-icon"><i class="fas fa-venus"></i></div>
+                        <h3 class="feature-title">Women's Friendly</h3>
+                        <p class="feature-desc">A safe, respectful, and encouraging environment for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Gallery -->
+        <section class="equipment" id="equipment">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">PREMIUM <span class="text-accent">EQUIPMENT</span></h2>
+                </div>
+                
+                <div class="equipment-grid">
+                    <div class="equip-card reveal-up" data-tilt>
+                        <img src="assets/images/equipment1.jpg" alt="Equipment 1">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="equip-card reveal-up" data-tilt style="transition-delay: 0.1s;">
+                        <img src="assets/images/equipment2.jpg" alt="Equipment 2">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="equip-card reveal-up" data-tilt style="transition-delay: 0.2s;">
+                        <img src="assets/images/equipment3.jpg" alt="Equipment 3">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="equip-card reveal-up" data-tilt>
+                        <img src="assets/images/equipment4.jpg" alt="Equipment 4">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="equip-card reveal-up" data-tilt style="transition-delay: 0.1s;">
+                        <img src="assets/images/equipment5.jpg" alt="Equipment 5">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="equip-card reveal-up" data-tilt style="transition-delay: 0.2s;">
+                        <img src="assets/images/equipment6.jpg" alt="Equipment 6">
+                        <div class="equip-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fullscreen Image Modal -->
+            <div class="image-modal" id="imageModal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
+        </section>
+
+        <!-- Membership Plans -->
+        <section class="memberships" id="memberships">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">CHOOSE YOUR <span class="text-accent">PATH</span></h2>
+                </div>
+                
+                <div class="pricing-grid">
+                    <!-- Basic -->
+                    <div class="pricing-card glass-card reveal-up">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price">₹1,500<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check text-accent"></i> Cardio Access</li>
+                            <li><i class="fas fa-check text-accent"></i> Strength Zone</li>
+                            <li><i class="fas fa-check text-accent"></i> Locker Room</li>
+                            <li class="disabled"><i class="fas fa-times"></i> MMA & Boxing</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Personal Trainer</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-full magnetic-btn">Select Plan</a>
+                    </div>
+                    
+                    <!-- Premium -->
+                    <div class="pricing-card glass-card popular reveal-up" style="transition-delay: 0.1s;">
+                        <div class="popular-badge">MOST POPULAR</div>
+                        <h3 class="plan-name">Premium</h3>
+                        <div class="plan-price">₹2,500<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check text-accent"></i> All Basic Features</li>
+                            <li><i class="fas fa-check text-accent"></i> MMA & Boxing Area</li>
+                            <li><i class="fas fa-check text-accent"></i> Group Classes</li>
+                            <li><i class="fas fa-check text-accent"></i> Diet Consultation</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Personal Trainer</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary btn-full magnetic-btn">Select Plan</a>
+                    </div>
+                    
+                    <!-- Elite -->
+                    <div class="pricing-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <h3 class="plan-name">Elite</h3>
+                        <div class="plan-price">₹5,000<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check text-accent"></i> All Premium Features</li>
+                            <li><i class="fas fa-check text-accent"></i> 1-on-1 Personal Training</li>
+                            <li><i class="fas fa-check text-accent"></i> Custom Diet Plan</li>
+                            <li><i class="fas fa-check text-accent"></i> Supplement Guidance</li>
+                            <li><i class="fas fa-check text-accent"></i> Towel Service</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline btn-full magnetic-btn">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trainers -->
+        <section class="trainers" id="trainers">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">EXPERT <span class="text-accent">TRAINERS</span></h2>
+                </div>
+                
+                <div class="trainers-grid">
+                    <div class="trainer-card reveal-up">
+                        <div class="trainer-img-wrap">
+                            <img src="assets/images/trainer1.jpg" alt="Trainer 1">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Alex Mercer</h3>
+                            <p class="trainer-spec text-accent">Head Coach / Strength</p>
+                            <p class="trainer-exp">8 Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="trainer-img-wrap">
+                            <img src="assets/images/trainer2.jpg" alt="Trainer 2">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Sarah Connor</h3>
+                            <p class="trainer-spec text-accent">Cardio & HIIT</p>
+                            <p class="trainer-exp">5 Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="trainer-img-wrap">
+                            <img src="assets/images/trainer3.jpg" alt="Trainer 3">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">David Silva</h3>
+                            <p class="trainer-spec text-accent">MMA & Boxing</p>
+                            <p class="trainer-exp">10 Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trainer-card reveal-up" style="transition-delay: 0.3s;">
+                        <div class="trainer-img-wrap">
+                            <img src="assets/images/trainer4.jpg" alt="Trainer 4">
+                            <div class="trainer-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Emma Stone</h3>
+                            <p class="trainer-spec text-accent">Yoga & Flexibility</p>
+                            <p class="trainer-exp">6 Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transformations -->
+        <section class="transformations" id="transform">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">REAL <span class="text-accent">RESULTS</span></h2>
+                </div>
+                
+                <div class="transform-slider-container reveal-up">
+                    <div class="ba-slider">
+                        <!-- After Image (Background) -->
+                        <img src="assets/images/transform1-after.jpg" alt="After Transformation" class="ba-image">
+                        
+                        <!-- Before Image (Foreground, clipped) -->
+                        <div class="resize" style="width: 50%;">
+                            <img src="assets/images/transform1-before.jpg" alt="Before Transformation" class="ba-image">
+                        </div>
+                        
+                        <!-- Slider Handle -->
+                        <div class="handle" style="left: 50%;">
+                            <span class="handle-arrow left"><i class="fas fa-caret-left"></i></span>
+                            <span class="handle-arrow right"><i class="fas fa-caret-right"></i></span>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-btn active" data-index="1"></button>
+                        <button class="slider-btn" data-index="2"></button>
+                        <button class="slider-btn" data-index="3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Reviews -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">WHAT MEMBERS <span class="text-accent">SAY</span></h2>
+                    <div class="google-rating-overall reveal-up">
+                        <h2>4.9</h2>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Based on 57 Google Reviews</p>
+                    </div>
+                </div>
+                
+                <div class="reviews-grid">
+                    <div class="review-card glass-card reveal-up">
+                        <div class="review-header">
+                            <div class="reviewer-initial">A</div>
+                            <div>
+                                <h4 class="reviewer-name">Amit Sharma</h4>
+                                <div class="review-stars text-accent">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Great atmosphere, awesome trainers. The equipment is top-notch and always clean. Highly recommend!"</p>
+                    </div>
+                    
+                    <div class="review-card glass-card reveal-up" style="transition-delay: 0.1s;">
+                        <div class="review-header">
+                            <div class="reviewer-initial">R</div>
+                            <div>
+                                <h4 class="reviewer-name">Rahul Verma</h4>
+                                <div class="review-stars text-accent">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Professional MMA training. The dedicated zone is fantastic. Best gym in Srinagar without a doubt."</p>
+                    </div>
+                    
+                    <div class="review-card glass-card reveal-up" style="transition-delay: 0.2s;">
+                        <div class="review-header">
+                            <div class="reviewer-initial">S</div>
+                            <div>
+                                <h4 class="reviewer-name">Sana Mir</h4>
+                                <div class="review-stars text-accent">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Very clean facility and friendly environment. I feel safe and comfortable working out here as a woman."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Map -->
+        <section class="location" id="location">
+            <div class="container">
+                <div class="location-wrapper glass-card reveal-up">
+                    <div class="location-info">
+                        <h2 class="section-title">FIND <span class="text-accent">US</span></h2>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt text-accent"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <p>242 Main Road, Near DAV School<br>Jawahar Nagar, Srinagar<br>Jammu & Kashmir, 190008</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock text-accent"></i>
+                                <div>
+                                    <strong>Business Hours</strong>
+                                    <p>Mon - Sat: 5:30 AM - 10:00 PM<br>Sunday: 7:00 AM - 1:00 PM</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="location-actions">
+                            <a href="#" class="btn btn-primary magnetic-btn"><i class="fas fa-directions"></i> Directions</a>
+                            <a href="#" class="btn btn-outline magnetic-btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="#" class="btn btn-outline magnetic-btn"><i class="fas fa-phone"></i> Call</a>
+                        </div>
+                    </div>
+                    <div class="location-map">
+                        <!-- Placeholder for Map -->
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt text-accent" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                            <p>Interactive Map Embedded Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-text">FREQUENTLY ASKED <span class="text-accent">QUESTIONS</span></h2>
+                </div>
+                
+                <div class="faq-container reveal-up">
+                    <div class="faq-item">
+                        <button class="faq-question">What are the gym timings? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>We are open Monday to Saturday from 5:30 AM to 10:00 PM. On Sundays, we are open from 7:00 AM to 1:00 PM.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How does the membership work? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>We offer monthly, quarterly, and annual memberships across Basic, Premium, and Elite tiers. You can upgrade or freeze your membership at any time.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Are there female trainers available? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes, we have certified female trainers available for personal training and general guidance on the gym floor.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer Personal Training? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our Elite plan includes 1-on-1 personal training, or you can add PT sessions to any other membership tier.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you have dedicated MMA/Boxing areas? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes, Premium and Elite members have access to our specialized combat sports zone, complete with heavy bags and a sparring ring.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Is there parking available? <i class="fas fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide ample free parking for all our members right outside the facility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-form-container glass-card reveal-up">
+                        <h2 class="form-title">Start Your Journey</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" required placeholder=" ">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="goal" required>
+                                    <option value="" disabled selected>Select Your Goal</option>
+                                    <option value="weight-loss">Weight Loss</option>
+                                    <option value="muscle-gain">Muscle Gain</option>
+                                    <option value="mma">Boxing / MMA</option>
+                                    <option value="general">General Fitness</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder=" "></textarea>
+                                <label for="message">Message (Optional)</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary magnetic-btn" style="width: 100%;">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" alt="Hybrid Fitness Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <span style="display:none;" class="logo-text">HYBRID</span>
+                    </a>
+                    <p class="footer-desc">Premium fitness facility dedicated to helping you achieve your ultimate potential.</p>
+                    <div class="social-links">
+                        <a href="#" class="magnetic-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="magnetic-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="magnetic-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#equipment">Equipment</a></li>
+                        <li><a href="#memberships">Memberships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Services</h4>
+                    <ul>
+                        <li><a href="#">Personal Training</a></li>
+                        <li><a href="#">Strength Zone</a></li>
+                        <li><a href="#">MMA & Boxing</a></li>
+                        <li><a href="#">Diet Consultation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hybrid Fitness Gym. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-accent"></i> for premium performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
